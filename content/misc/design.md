@@ -4,10 +4,14 @@ description = "Compilation of Design Inspiration Sources"
 date = 2023-03-06
 +++
 
-## rsms
+## People's Sites
+### rsms
 This site in particular is inspired by the work of [Rasmus Anderson](https://rsms.me), and his personal site [rsms.me](https://rsms.me). It's built using the [Raster](https://rsms.me/raster/) CSS grid system, and the [Inter font](https://rsms.me/inter/), both by Anderson. 
 
 Anderson also was involved in the creation of [Figma](https://figma.com).
+
+### [Nathan Wentworth](https://nathanwentworth.co)
+Reminds me of [rsms.me](https://rsms.me).
 
 ## [Figma](https://figma.com)
 [Figma](https://figma.com) is a "collaborative web application for interface design" [(quote)](https://en.wikipedia.org/wiki/Figma_(software)). It's main use is for UI/UX design, allowing for rapid prototyping interfaces and such, but it works well as a graphic design tool.
@@ -40,3 +44,7 @@ Wow. Check it out.
 ### Individual Fonts
 #### [Inter](https://rsms.me/inter/)
 (at the time of writing) Used for this site. Nice, simple, display-readable.
+
+## Other
+### [_why](https://viewsourcecode.org/why/)
+"_why the lucky stiff"'s work is less of a direct design inspiration and more of a this-is-how-I-want-my-work-perceived inspiration. A genuinely interesting body of work, it's creator and their story.
