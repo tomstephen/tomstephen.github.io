@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<r-grid columns=3>
+    <r-cell span=2><h1>Tom Stephen</h1></r-cell>
+    <r-cell>
+        Instagram <a href="https://www.instagram.com/nehpetsmot/">@nehpetsmot</a> <br>
+        Github <a href="https://www.github.com/tomstephen">@tomstephen</a>
+    </r-cell>
+    <r-cell span="3"><hr></r-cell>
+    <r-cell span=2>
+        <r-grid columns=2>
+            <r-grid columns=1>
+                <r-cell>
+                    <h2><a href="{{ get_url(path='@/projects/_index.md') }}">Projects</a></h2>
+                </r-cell>
+                {% set projects = get_section(path="projects/_index.md") %}
+                {% for page in projects.pages %}
+                    <r-cell>
+                        <a href="{{ page.permalink | safe }}">{{ page.title }}</a> <br>
+                        {{ page.description }}
+                    </r-cell>
+                {% endfor %}
+            </r-grid>
+            <r-grid columns=1>
+                <r-cell>
+                    <h2><a href="{{ get_url(path='@/misc/_index.md') }}">Misc Posts</a></h2>
+                </r-cell>
+                {% set misc = get_section(path="misc/_index.md") %}
+                {% for page in misc.pages %}
+                    <r-cell>
+                        <a href="{{ page.permalink | safe }}">{{ page.title }}</a> <br>
+                        {{ page.description }} <p style="color:gray">{{ page.date }}</p>
+                    </r-cell>
+                {% endfor %}
+            </r-grid>
+        </r-grid>
+    </r-cell>
+    <r-cell>
+        My name is Tom, I'm from New Zealand and live in Queensland. For work, I'm a physicist working on hydroacoustic models for marine conservation. 
+        <br><br>
+        I spend a lot of time on photography, and am an executive committee member of UQPS. Recently, I've been getting back into cycling.
+    </r-cell>
+</r-grid>
+{% endblock content %}
