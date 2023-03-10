@@ -2,20 +2,22 @@
 
 {% block content %}
 
-<r-grid columns="2">
-    <r-cell>
+<r-grid columns="4">
+    <r-cell span=3 span-s=row>
         <h1 class="title">
             {{ page.title }}
         </h1>
+        <p class="subtitle"><strong>{{ page.date }}</strong></p>
+        <h4 style="color:orange">{{ page.description }}</h4>
     </r-cell>
     <r-cell style="text-align: right">
         <a href="{{ get_url(path='/') }}">back home</a>
     </r-cell>
 </r-grid>
 
-<p class="subtitle"><strong>{{ page.date }}</strong></p>
 
-<h4 style="color:orange">{{ page.description }}</h4>
+
+
 
 
 {{ page.content | safe }}
